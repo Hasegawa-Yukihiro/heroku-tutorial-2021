@@ -11,7 +11,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "../dist"),
     filename: "bundle.js",
-    publicPath: "./"
+    publicPath: "/"
   },
   /** https://qiita.com/YoshinoriKanno/items/322ae6e53daa35059c15 */
   devtool: "eval-source-map",
