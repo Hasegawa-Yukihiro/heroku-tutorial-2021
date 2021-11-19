@@ -19,6 +19,6 @@ export const intervalRequest = () => {
   // 毎朝7時からインターバルスタート
   setTimeout(() => {
     // herokuの仕様で30分リクエストがないとスリープしてしまうため30分ごとにリクエスト送信
-    interval = setInterval(request, 60000 * 30);
+    interval = setInterval(request, 60000 * 29);
   }, new Date().setHours(7, 0, 0, 0) - new Date().setHours(currentHour, currentMinute));
 };
